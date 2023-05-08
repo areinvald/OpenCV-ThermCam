@@ -34,6 +34,9 @@ void MyVideoCapture::run()
 
 QPixmap MyVideoCapture::klatka()
 {
+    /**/
+    /*MY THEACHER MADE ME WRITE THIS CODE LIKE THIS*/
+    
     frame2 = mFrame.clone(); // KOPIOWANIE KLATKI
     cv::cvtColor(frame2, frame4, cv::COLOR_BGR2GRAY); // KONWERTOWANIE KLATKI NA NA JEDNOKANAŁOWĄ
     cv::minMaxLoc(frame4, NULL, &max, NULL, &maxLoc ); // ODCZYTYWANIE POLOZENIA NAJJASNIEJSZEGO PIXELA
